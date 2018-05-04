@@ -1,0 +1,27 @@
+<html>
+<head>
+    <style>
+    html, body, webview {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+<body>
+    <webview id="webview" src="https://www.gmail.com/" autosize></webview>
+    <script>
+            onload = () => {
+                // $(document).ready(function() {
+                //     $("#lst-ib").val("Hello, World!");
+                // });
+                const webview = document.querySelector('webview')
+                webview.addEventListener('dom-ready', () => {
+                    webview.openDevTools()
+                })
+            }
+          </script>
+</body>
+</html>

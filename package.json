@@ -1,0 +1,17 @@
+{
+  "name": "MailCrypt",
+  "version": "0.0.1",
+  "description": "mail encryption app over gmail",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "start:dev": "nodemon ./node_modules/electron/cli.js ."
+  },
+  "repository": "git@github.com:FaultWorks/MailCrypt.git",
+  "author": "kanekotic <alvarojosepl@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "2.0.0",
+    "nodemon": "1.17.3"
+  }
+}
