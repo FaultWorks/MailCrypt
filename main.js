@@ -16,9 +16,6 @@ function createWindow () {
       slashes: true
   }))
 
-  // mainWindow.webContents.openDevTools()
-
-//   console.log(document.querySelector('table .HE td div[role="button"][data-tooltip^="Send"]'))
   mainWindow.on('closed', function () {
     mainWindow = null
   })
