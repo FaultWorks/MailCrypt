@@ -11,14 +11,12 @@
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
 <body>
-    <!-- <webview id="webview" preload="./inyector.js" src="https://www.google.com/" autosize></webview> -->
     <webview id="webview" preload="./inyector.js" src="https://www.gmail.com/" autosize></webview>
     <script>
         onload = () => {
             const webview = document.querySelector('webview')
             webview.addEventListener('dom-ready', () => {
                 webview.openDevTools()
-                // webview.executeJavaScript(inyector.toString())
             })
         }
     </script>
