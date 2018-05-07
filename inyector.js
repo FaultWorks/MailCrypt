@@ -4,9 +4,6 @@ function bindSendButton(){
     if (!sendButton)
         return false
     sendButton.addEventListener("click", function(){
-        // event.preventDefault()
-        // event.stopPropagation()
-        alert("nothing happens")
         return false
     }); 
     return true
