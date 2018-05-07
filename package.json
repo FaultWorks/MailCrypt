@@ -1,5 +1,5 @@
 {
-  "name": "MailCrypt",
+  "name": "mailcrypt",
   "version": "0.0.1",
   "description": "mail encryption app over gmail",
   "main": "main.js",
