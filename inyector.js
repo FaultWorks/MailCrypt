@@ -5,7 +5,9 @@ function bindSendButton(){
     if (!sendButton)
         return false
     sendButton.addEventListener("click", (event) => {
-        event.stopImmediatePropagation()
+        let textArea = document.querySelector('div[role="textbox"][class^="Am Al editable LW-avf"]')
+        textArea.innerHTML = `Encripted ${textArea.innerHTML}` 
+        console.log(textArea.innerHTML)
     }) 
     return true
 }
