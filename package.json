@@ -2,16 +2,32 @@
   "name": "mailcrypt",
   "version": "0.0.1",
   "description": "mail encryption app over gmail",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "electron .",
-    "start:dev": "nodemon ./node_modules/electron/cli.js ."
+    "start:dev": "nodemon ./node_modules/electron/cli.js .",
+    "test": "jest",
+    "test:dev": "jest --watchAll"
   },
   "repository": "git@github.com:FaultWorks/MailCrypt.git",
   "author": "kanekotic <alvarojosepl@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "electron": "2.0.0",
+    "jest": "22.4.3",
     "nodemon": "1.17.3"
+  },
+  "dependencies": {
+    "openpgp": "3.0.9",
+    "store": "2.0.12"
+  },
+  "jest": {
+    "automock": false,
+    "testMatch": [
+      "**/test/**/*-test.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|native-base|react-navigation)"
+    ]
   }
 }
